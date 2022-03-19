@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lobster|Pattaya|Srisakdi&display=swap");
+html,
+body {
+	cursor: url("../images/mouse-f1.png"), auto;
+}
+a:hover {
+	cursor: url("../images/mouse-f2.png"), auto;
+}
 .loader {
 	background: #ffffff;
 	bottom: 0;
@@ -108,7 +116,7 @@
 	background-color: rgb(138, 138, 138);
 }
 #boxs {
-	margin-top: 0px;
+	margin-top: 3px;
 }
 #bg {
 	position: fixed;
@@ -144,9 +152,9 @@
 }
 #cover {
 	position: relative;
-	height: 35%;
+	height: 100%;
 	width: 100%;
-	background-image: url("https://i.gifer.com/TPPX.gif");
+	background-image: url("../images/cover.gif");
 	background-position: center;
 	background-size: cover;
 	border-top-left-radius: 25px;
@@ -158,7 +166,7 @@
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background-image: url("https://i.gifer.com/TPPX.gif");
+	background-image: url("../images/cover.gif");
 	background-position: center;
 	background-size: cover;
 	border-top-left-radius: 25px;
@@ -184,13 +192,14 @@
 #name {
 	text-align: center;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 30px;
 	margin-top: 10px;
 	margin-bottom: 0px;
+	font-family: "Lobster";
 }
 #name i {
-	color: #2d88ff;
-	font-size: 18px;
+	color: #1877f2;
+	font-size: 25px;
 }
 #bio {
 	text-align: center;
@@ -206,7 +215,7 @@
 	margin-top: 10px;
 	margin: 10px auto;
 	text-align: center;
-	font-weight: bold;
+	font-weight: lighter;
 	font-size: 20px;
 	color: #ffffff;
 	background: rgb(45, 136, 255);
@@ -214,9 +223,8 @@
 	background: -moz-linear-gradient(127deg, rgba(45, 136, 255, 1) 0%, rgba(131, 186, 255, 1) 100%);
 	background: -webkit-linear-gradient(127deg, rgba(45, 136, 255, 1) 0%, rgba(131, 186, 255, 1) 100%);
 	background: linear-gradient(127deg, rgba(45, 136, 255, 1) 0%, rgba(131, 186, 255, 1) 100%);
-	font-family: "Roboto";
+	font-family: "Lobster";
 	transition: all 250ms;
-
 	cursor: default;
 }
 #contact-text:hover {
@@ -322,16 +330,12 @@
 .div-logo:hover {
 	transform: rotate(360deg);
 }
-/* RESPONDSIVE */
-/* =========================================== */
 @media only screen and (max-width: 540px) {
 	#main {
 		width: 100vw;
 		margin-top: 0vw;
 		margin-bottom: 0;
 		border-radius: 0;
-		/* margin-bottom: 2vw;
-		margin-left: 2%; */
 	}
 	#bg-cover {
 		border-radius: 0;
@@ -343,4 +347,47 @@
 	.linked {
 		font-size: 19px;
 	}
+}
+.facebook {
+	background: rgb(42, 100, 173);
+	background: -moz-linear-gradient(127deg, rgba(42, 100, 173, 1) 0%, rgba(45, 136, 255, 1) 100%);
+	background: -webkit-linear-gradient(127deg, rgba(42, 100, 173, 1) 0%, rgba(45, 136, 255, 1) 100%);
+	background: linear-gradient(127deg, rgba(42, 100, 173, 1) 0%, rgba(45, 136, 255, 1) 100%);
+}
+.messenger {
+	background: #fc466b;
+	background: -webkit-linear-gradient(to right, #3f5efb, #fc466b);
+	background: linear-gradient(to right, #3f5efb, #fc466b);
+}
+.tiktok {
+	background: #010101;
+	background: -webkit-linear-gradient(to right, #010101, #6c0016);
+	background: linear-gradient(to right, #010101, #6c0016);
+}
+.zalo {
+	background: rgb(0, 104, 255);
+	background: linear-gradient(127deg, rgba(0, 104, 255, 1) 0%, rgba(117, 173, 255, 1) 100%);
+}
+.zalo-icon {
+	background-image: url("../images/zalo.jpg");
+}
+.momo {
+	background: #a80069;
+	background: linear-gradient(127deg, #a80069 0%, #d73193 100%);
+}
+.momo-icon {
+	background-image: url("../images/momo.png");
+	font-size: 90%;
+}
+.badge {
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #2d88ff;
+	padding: 0.5px 3px;
+	border-radius: 3px;
+	font-size: 10px;
+}
+a {
+	text-decoration: none !important;
+	color: rgb(42, 100, 173) !important;
 }
