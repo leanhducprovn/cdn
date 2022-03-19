@@ -418,7 +418,7 @@ a:hover {
 	background: linear-gradient(127deg, #1f00cf 0%, #006db5 100%);
 }
 .mbbank-icon {
-	background-image: url("../images/mbbank.webp");
+	background-image: url("../images/mbbank.png");
 }
 .badge {
 	font-weight: bold;
