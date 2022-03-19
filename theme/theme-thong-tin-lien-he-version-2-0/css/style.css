@@ -8,7 +8,10 @@ a:hover {
 	cursor: url("../images/mouse-f2.png"), auto;
 }
 .loader {
-	background: #ffffff;
+	background: #4568dc;
+	background: -webkit-linear-gradient(to right, #b06ab3, #4568dc);
+	background: linear-gradient(to right, #b06ab3, #4568dc);
+	opacity: 0.6;
 	bottom: 0;
 	left: 0;
 	overflow: hidden;
