@@ -349,10 +349,22 @@ a:hover {
 	}
 }
 .facebook {
-	background: rgb(42, 100, 173);
-	background: -moz-linear-gradient(127deg, rgba(42, 100, 173, 1) 0%, rgba(45, 136, 255, 1) 100%);
-	background: -webkit-linear-gradient(127deg, rgba(42, 100, 173, 1) 0%, rgba(45, 136, 255, 1) 100%);
-	background: linear-gradient(127deg, rgba(42, 100, 173, 1) 0%, rgba(45, 136, 255, 1) 100%);
+	background: #3a5795;
+	color: #1c3977;
+	background: linear-gradient(to bottom, #3a5795 0%, #2b4886 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3a5795), color-stop(100%, #2b4886));
+	background: -webkit-linear-gradient(top, #3a5795 0%, #2b4886 100%);
+	background: -moz-linear-gradient(top, #3a5795 0%, #2b4886 100%);
+	background: -o-linear-gradient(top, #3a5795 0%, #2b4886 100%);
+	background: -ms-linear-gradient(top, #3a5795 0%, #2b4886 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3A5795', endColorstr='#2B4886', GradientType=0);
+	border: 1px solid #1c3977;
+	text-shadow: 0 1px 0 #4966a4;
+	-webkit-text-shadow: 0 1px 0 #4966a4;
+	-moz-text-shadow: 0 1px 0 #4966a4;
+	box-shadow: inset 0 1px 0 #4966a4;
+	-webkit-box-shadow: inset 0 1px 0 #4966a4;
+	-moz-box-shadow: inset 0 1px 0 #4966a4;
 }
 .messenger {
 	background: #fc466b;
@@ -365,11 +377,16 @@ a:hover {
 	background: linear-gradient(to right, #010101, #6c0016);
 }
 .zalo {
-	background: rgb(0, 104, 255);
-	background: linear-gradient(127deg, rgba(0, 104, 255, 1) 0%, rgba(117, 173, 255, 1) 100%);
+	background: #0064f7;
+	background: linear-gradient(127deg, #0064f7 0%, #2a7fff 100%);
 }
 .zalo-icon {
-	background-image: url("../images/zalo.jpg");
+	background-image: url("../images/zalo.png");
+}
+.phone {
+	background: #1f1c2c;
+	background: -webkit-linear-gradient(to right, #1f1c2c, #928dab);
+	background: linear-gradient(to right, #1f1c2c, #928dab);
 }
 .momo {
 	background: #a80069;
@@ -377,7 +394,20 @@ a:hover {
 }
 .momo-icon {
 	background-image: url("../images/momo.png");
-	font-size: 90%;
+}
+.vietcombank {
+	background: #006c46;
+	background: linear-gradient(127deg, #006c46 0%, #77bc41 100%);
+}
+.vietcombank-icon {
+	background-image: url("../images/vietcombank.png");
+}
+.mbbank {
+	background: #1f00cf;
+	background: linear-gradient(127deg, #1f00cf 0%, #006db5 100%);
+}
+.mbbank-icon {
+	background-image: url("../images/mbbank.webp");
 }
 .badge {
 	font-weight: bold;
