@@ -10,5 +10,6 @@ const project = {
 		},
 	],
 	date: "26/05/2022",
-	push: "update lần 3",
+	update: "Update lần 4",
+	push: "Push lần 4",
 };
