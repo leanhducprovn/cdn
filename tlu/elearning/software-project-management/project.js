@@ -10,4 +10,5 @@ const project = {
 		},
 	],
 	date: "26/05/2022",
+	update: "Lần 1"
 };
