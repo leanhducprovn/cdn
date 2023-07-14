@@ -16,6 +16,9 @@
     "comment": "Kommentar",
     "reply": "Antwort",
     "copy": "Kopieren",
+    "cut": "Schneiden",
+    "paste": "Paste",
+    "pasteWithoutFormatting": "Ohne Formatierung einfügen",
     "delete": "Löschen",
     "group": "Gruppe erstellen",
     "ungroup": "Gruppe aufheben",
@@ -78,6 +81,7 @@
     "showLess": "zeige weniger",
     "showMore": "...mehr",
     "chooseFile": "Datei auswählen",
+    "changeDate": "Datum ändern",
     "browse": "Dateien durchsuchen",
     "selectYourOption": "Option wählen",
     "open": "Öffnen",
@@ -85,6 +89,7 @@
     "select": "Auswählen",
     "moveToTop": "Nach oben verschieben",
     "moveToBottom": "Nach unten gehen",
+    "backToMenu": "Zurück zum Menü",
     "redactPages": "Seiten schwärzen",
     "playAudio": "Audio abspielen",
     "pauseAudio": "Audiopause",
@@ -95,8 +100,10 @@
     "multiReplyAnnotations": "Auf ausgewählte Anmerkungen antworten ({{count}})",
     "comparePages": "Seiten vergleichen",
     "startComparison": "Vergleich starten",
+    "showComparison": "Vergleich anzeigen",
     "back": "Der Rücken",
-    "clearSignature": "Klare Unterschrift"
+    "clearSignature": "Klare Unterschrift",
+    "newDocument": "Neues Dokument"
   },
   "annotation": {
     "areaMeasurement": "Flächenmessung",
@@ -251,6 +258,7 @@
     "errorEnterMeasurement": "Die eingegebene Nummer ist ungültig. Sie können Werte wie 7,5 oder 7 1/2 eingeben",
     "linkURLorPage": "Link URL oder eine Seite",
     "warning": "Warnung",
+    "svgMalicious": "SVG-Skript aus Sicherheitsgründen ignoriert",
     "enterContentEditingMode": "Sie sind dabei, in den Textbearbeitungsmodus zu wechseln.",
     "existingAnnotationWarning": "Vorhandene Anmerkungen stimmen möglicherweise nicht mit dem Text überein, nachdem dieser bearbeitet wurde.",
     "changesCannotBeUndone": "Vorgenommene Änderungen können nicht rückgängig gemacht werden.",
@@ -413,7 +421,7 @@
       "addStamp": "Neuen Stempel hinzufügen"
     },
     "signatureOverlay": {
-      "addSignature": "Eine Unterschrift hinzufügen",
+      "addSignature": "Unterschrift hinzufügen",
       "addSignatureOrInitials": "Unterschrift/Initialen"
     },
     "signatureModal": {
@@ -449,7 +457,9 @@
       "filters": "Filter",
       "user": "Benutzer",
       "type": "Typ",
-      "status": "Status"
+      "status": "Status",
+      "filterSettings": "Filtereinstellungen",
+      "filterDocument": "Dokument- und Kommentarbereich filtern"
     },
     "state": {
       "accepted": "Angenommen",
@@ -493,8 +503,8 @@
         "incorrectSyntax": "Falsche Syntax"
       },
       "scaleOverlay": {
-        "addNewScale": "Neue Waage hinzufügen",
-        "selectTwoPoints": "Wählen Sie zwei Punkte mit bekannter Abmessung zum Kalibrieren aus",
+        "addNewScale": "Neuen Maßstab hinzufügen",
+        "selectTwoPoints": "Zwei Punkte mit bekannten Abmessungen für die Kalibrierung auswählen",
         "inputKnowDimension": "Geben Sie bekannte Dimensionen und Einheiten zum Kalibrieren ein",
         "multipleScales": "Mehrere Skalen"
       },
@@ -512,6 +522,12 @@
         "ifChangeScale": "Wenn Sie den Maßstab für die ausgewählte Messung oder das ausgewählte Werkzeug ändern, skalieren Sie",
         "notUsedWillDelete": " werden von keinen Messungen oder Werkzeugen mehr verwendet und gelöscht. Die Löschung ist irreversibel.",
         "ifToContinue": "Möchten Sie wirklich fortfahren?"
+      }
+    },
+    "contentEdit": {
+      "deletionModal": {
+        "title": "Inhalt löschen",
+        "message": "Sind Sie sicher, dass Sie den ausgewählten Inhalt löschen möchten? Dies kann nicht rückgängig gemacht werden."
       }
     },
     "stylePopup": {
@@ -559,7 +575,8 @@
     "thumbnailPanel": {
       "delete": "Löschen",
       "rotateClockwise": "Im Uhrzeigersinn",
-      "rotateCounterClockwise": "Gegen den Uhrzeigersinn"
+      "rotateCounterClockwise": "Gegen den Uhrzeigersinn",
+      "moreOptions": "Mehr Optionen"
     },
     "thumbnailsControlOverlay": {
       "move": "Seiten verschieben"
@@ -609,6 +626,7 @@
     },
     "settings": {
       "settings": "Einstellungen",
+      "searchSettings": "Sucheinstellungen",
       "general": "Allgemein",
       "language": "Sprache",
       "theme": "Thema",
@@ -727,6 +745,10 @@
       "title": "Ohne Download schließen?",
       "message": "An diesem Dokument wurden Änderungen vorgenommen. Möchten Sie es wirklich schließen, ohne Ihre Arbeit herunterzuladen? Sie können diese Aktion nicht rückgängig machen.",
       "rejectDownloadButton": "Ohne Download schließen"
+    },
+    "connectToURL": {
+      "title": "Sicherheitswarnung",
+      "message": "Dieses Dokument versucht, eine Verbindung herzustellen zu:\n\n{{-uri}}.\n\n Wenn Sie diesem Dokument vertrauen, klicken Sie auf Bestätigen, um es zu öffnen."
     }
   },
   "shortcut": {
@@ -776,7 +798,7 @@
   "link": {
     "url": "URL",
     "page": "Seite",
-    "enterurl": "Geben Sie die URL ein, zu der Sie einen Link erstellen möchten",
+    "enterurl": "URL eingeben, auf die der Link verweisen soll",
     "enterpage": "Wählen Sie die Seitennummer aus, zu der Sie einen Link erstellen möchten",
     "urlLink": "URL-Link"
   },
@@ -1063,6 +1085,22 @@
   },
   "languageModal": {
     "selectLanguage": "Sprache auswählen"
+  },
+  "officeEditor": {
+    "bold": "Deutlich",
+    "italic": "Kursiv",
+    "underline": "Unterstreichen",
+    "textColor": "Textfarbe",
+    "leftAlign": "Links ausrichten",
+    "centerAlign": "Zentrieren",
+    "rightAlign": "Rechts ausrichten",
+    "justify": "Rechtfertigen",
+    "lineSpacing": "Zeilen- und Absatzabstand",
+    "bulletList": "Liste mit Aufzählungszeichen",
+    "numberList": "Nummerierte Liste",
+    "insertLink": "Verknüpfung einfügen",
+    "insertImage": "Bild einfügen",
+    "notSupportedOnMobile": "Die Office-Bearbeitung wird auf Mobilgeräten nicht unterstützt."
   },
   "insertPageModal": {
     "title": "Neue Seite hinzufügen",
